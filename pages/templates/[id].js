@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import Template from "../../Modules/template";
+import Template from "../../Modules/";
 import mongoose from "mongoose";
 import gsCustome from "grapesjs-custom-code";
 import gjsbasicplugin from "grapesjs-blocks-basic";
@@ -34,7 +34,7 @@ const Post = ({ selectPage }) => {
   const router = useRouter();
   const { id } = router.query;
   console.log("id=",id)
-  console.log("selectPage.slug=",pageId)
+  console.log("selectPage.slug=",selectPage.slug)
 
   const escapeName = (name) =>
     `${name}`.trim().replace(/([^a-z0-9\w-:/]+)/gi, "-");
@@ -88,7 +88,7 @@ const Post = ({ selectPage }) => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: selectPage.slug,
+            Authorization: pageId,
           },
         }
       );
@@ -124,7 +124,7 @@ const Post = ({ selectPage }) => {
           {
             headers: {
               "Content-Type": "application/json",
-              Authorization: selectPage.slug,
+              Authorization: pageId,
             },
           }
         );
@@ -150,7 +150,7 @@ const Post = ({ selectPage }) => {
             headers: {
               Accept: "application/json",
               "Content-type": "application/json",
-              Authorization: selectPage.slug,
+              Authorization: pageId,
             },
             body: JSON.stringify({
               html: htmldata,
@@ -196,6 +196,7 @@ const Post = ({ selectPage }) => {
     });
 
     setEditor(editor);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
