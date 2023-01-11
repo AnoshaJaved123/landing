@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import Template from "../../Modules/";
+import Template from "../../Modules/template";
 import mongoose from "mongoose";
 import gsCustome from "grapesjs-custom-code";
 import gjsbasicplugin from "grapesjs-blocks-basic";
@@ -25,6 +25,7 @@ import {
   styles,
 } from "./grapesUtils.js";
 import Blocks from "./blocks";
+import $ from "jquery";
 import Topnav from "./topnav";
 
 const Post = ({ selectPage }) => {
@@ -196,7 +197,7 @@ const Post = ({ selectPage }) => {
     });
 
     setEditor(editor);
-  }, [pageId]);
+  }, []);
 
   return (
     <>
