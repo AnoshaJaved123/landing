@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="grid grid-cols-8 gap-6 md:gap-0">
         <div className="border-r col-span-8 md:col-span-2 lg:col-span-3">
           <div className="flex gap-6 items-center justify-between py-6 border-b border-white md:py-0 md:border-none md:block md:space-y-6">
-            <img src={'/giphy99.gif'} alt="logo tailus" width={100} height={42} className="w-32" />
+            {/* <img src={'/giphy99.gif'} alt="logo tailus" width={100} height={42} className="w-32" /> */}
             <div className="flex gap-6">
               <a href="#" target="blank" aria-label="github" className="hover:text-cyan-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">

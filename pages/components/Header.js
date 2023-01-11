@@ -18,13 +18,13 @@ const Header = () => {
   </label>
   <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
     <li className="border-t md:border-none">
-      <a href="/" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+      <Link href="/" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</Link>
     </li>
     <li className="border-t md:border-none">
-      <a href="/login" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Editor</a>
+      <Link href="/login" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Editor</Link>
     </li>
     <li className="border-t md:border-none">
-      <a href="/template" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Template</a>
+      <Link href="/template" className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Template</Link>
     </li>
   </ul>
 </nav>
