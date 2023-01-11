@@ -1,0 +1,53 @@
+{
+  "name": "web-builder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.1.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "grapesjs": "^0.20.1",
+    "grapesjs-blocks-basic": "^1.0.1",
+    "grapesjs-blocks-bootstrap4": "^0.2.3",
+    "grapesjs-custom-code": "^1.0.1",
+    "grapesjs-plugin-export": "^1.0.11",
+    "grapesjs-style-bg": "^2.0.1",
+    "grapesjs-tabs": "^1.0.6",
+    "grapesjs-tailwind": "^1.0.7",
+    "jquery": "^3.6.3",
+    "js-cookie": "^3.0.1",
+    "json-server": "^0.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.3",
+    "next": "^13.0.4",
+    "nookies": "^2.5.2",
+    "path": "^0.12.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "react-toastify": "^9.1.1",
+    "sass": "^1.56.1",
+    "uninstall": "^0.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
+}
