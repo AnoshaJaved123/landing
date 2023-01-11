@@ -42,7 +42,7 @@ const Template = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <div>
         <nav className="relative px-4 py-4 flex justify-between items-center bg-gray-800">
           <a className="text-3xl font-bold leading-none" href="#">
@@ -359,7 +359,7 @@ const Template = () => {
       </section>
 
 
-    </div>
+    </>
   );
 };
 
