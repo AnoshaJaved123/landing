@@ -24,18 +24,13 @@ import {
   selectorManager,
   panels,
   deviceManager,
-  storageManager,
   assetManager,
   blockManager,
-  scripts,
-  styles,
 } from "./grapesUtils.js";
 import Blocks from "./blocks";
-import $ from "jquery";
 import Topnav from "./topnav";
 
 const Post = ({ selectPage }) => {
-  const pageId = selectPage._id;
   const [editor, setEditor] = useState(null);
   const [assets, setAssets] = useState([]);
   const router = useRouter();
@@ -44,6 +39,7 @@ const Post = ({ selectPage }) => {
     `${name}`.trim().replace(/([^a-z0-9\w-:/]+)/gi, "-");
 
   useEffect(() => {
+    const pageId = selectPage._id;
     const editor = grapesjs.init({
       container: "#editor",
       // canvas: {

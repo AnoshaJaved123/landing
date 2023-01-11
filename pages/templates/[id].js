@@ -18,7 +18,6 @@ import {
   selectorManager,
   panels,
   deviceManager,
-  storageManager,
   assetManager,
   blockManager,
   scripts,
@@ -28,18 +27,19 @@ import Blocks from "./blocks";
 import Topnav from "./topnav";
 
 const Post = ({ selectPage }) => {
-  const pageId = selectPage.slug;
   const [editor, setEditor] = useState(null);
   const [assets, setAssets] = useState([]);
   const router = useRouter();
   const { id } = router.query;
   console.log("id=",id)
-  console.log("selectPage.slug=",selectPage.slug)
+  // console.log("selectPage.slug=",selectPage.slug)
 
   const escapeName = (name) =>
     `${name}`.trim().replace(/([^a-z0-9\w-:/]+)/gi, "-");
 
   useEffect(() => {
+    const pageId = selectPage.slug;
+
     const editor = grapesjs.init({
       container: "#editor",
       canvas: {
