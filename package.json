@@ -8,9 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": {
-    "node": "16.x"
-  },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",
