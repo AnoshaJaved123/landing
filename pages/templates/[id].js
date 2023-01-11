@@ -57,7 +57,7 @@ const Post = ({ selectPage }) => {
         ],
       },
       storageManager: false,
-      blockManager: blockManager = {
+      blockManager:{
         appendTo: '#blocks',
       },
       styleManager: {
@@ -305,10 +305,10 @@ const Post = ({ selectPage }) => {
         ],
       
       },
-      layerManager: layerManager = {
+      layerManager:{
         appendTo: '#layers-container',
       },
-      assetManager: assetManager = {
+      assetManager:{
         upload: 0,
         assets: [
           'http://placehold.it/350x250/78c5d6/fff/image1.jpg',
@@ -439,7 +439,7 @@ const Post = ({ selectPage }) => {
           },
         ],
       },
-      deviceManager: deviceManager = {
+      deviceManager:{
         devices: [
           {
             name: 'Desktop',

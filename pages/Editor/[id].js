@@ -51,7 +51,7 @@ const Post = ({ selectPage }) => {
       // },
       allowScripts: 1,
       storageManager: false,
-      blockManager: blockManager = {
+      blockManager:{
         appendTo: '#blocks',
       },
       styleManager: {
@@ -299,10 +299,10 @@ const Post = ({ selectPage }) => {
         ],
       
       },
-      layerManager: layerManager = {
+      layerManager:{
         appendTo: '#layers-container',
       },
-      assetManager: assetManager = {
+      assetManager:{
         upload: 0,
         assets: [
           'http://placehold.it/350x250/78c5d6/fff/image1.jpg',
@@ -324,13 +324,13 @@ const Post = ({ selectPage }) => {
           },
         ],
       },
-      traitManager: traitManager = {
+      traitManager:{
         appendTo: '#trait-container',
       },
-      selectorManager: selectorManager = {
+      selectorManager:{
         appendTo: '#styles-container',
       }, escapeName,
-      panels: panels = {
+      panels:{
         defaults: [
           {
             id: 'basic-actions',
@@ -433,7 +433,7 @@ const Post = ({ selectPage }) => {
           },
         ],
       },
-      deviceManager: deviceManager = {
+      deviceManager:{
         devices: [
           {
             name: 'Desktop',
