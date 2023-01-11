@@ -1,6 +1,6 @@
 
 // export const page = localStorage.getItem('pageId')
-export const styleManager = {
+ const styleManager = {
   appendTo: '#styles-container',
   sectors: [
     {
@@ -246,23 +246,23 @@ export const styleManager = {
 
 };
 
-export const blockManager = {
+ const blockManager = {
   appendTo: '#blocks',
 };
 
-export const layerManager = {
+ const layerManager = {
   appendTo: '#layers-container',
 };
 
 
-export const traitManager = {
+ const traitManager = {
   appendTo: '#trait-container',
 };
 
-export const selectorManager = {
+ const selectorManager = {
   appendTo: '#styles-container',
 };
-export const panels = {
+ const panels = {
   defaults: [
     {
       id: 'basic-actions',
@@ -366,7 +366,7 @@ export const panels = {
   ],
 };
 
-export const deviceManager = {
+ const deviceManager = {
   devices: [
     {
       name: 'Desktop',
@@ -380,7 +380,7 @@ export const deviceManager = {
   ],
 };
 
-export const assetManager = {
+ const assetManager = {
   upload: 0,
   assets: [
     'http://placehold.it/350x250/78c5d6/fff/image1.jpg',
@@ -402,34 +402,35 @@ export const assetManager = {
     },
   ],
 }
-export const scripts = [
+ const scripts = [
   "https://code.jquery.com/jquery-3.5.1.slim.min.js",
   "https://unpkg.com/swiper@7/swiper-bundle.min.js",
   "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js",
   "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js",
   "https://cdn.jsdelivr.net/npm/chart.js",
 ];
-export const styles = [
+ const styles = [
   "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css",
   "https://unpkg.com/swiper@7/swiper-bundle.min.css",
   "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
 ];
 
 
-export const toggleSidebar = (fromEditor) => {
-  const sidebar = document.getElementById("navbar");
-  const mainContent = document.getElementById("main-content");
-  if (fromEditor) {
-    sidebar.classList.remove("d-flex");
-    sidebar.classList.add("d-none");
-    mainContent.classList.remove("w-85", "start-15");
-  } else if (sidebar.classList.contains("d-flex")) {
-    sidebar.classList.remove("d-flex");
-    sidebar.classList.add("d-none");
-    mainContent.classList.remove("w-85", "start-15");
-  } else {
-    sidebar.classList.remove("d-none");
-    sidebar.classList.add("d-flex");
-    mainContent.classList.add("w-85", "start-15");
-  }
-};
+//  const toggleSidebar = (fromEditor) => {
+//   const sidebar = document.getElementById("navbar");
+//   const mainContent = document.getElementById("main-content");
+//   if (fromEditor) {
+//     sidebar.classList.remove("d-flex");
+//     sidebar.classList.add("d-none");
+//     mainContent.classList.remove("w-85", "start-15");
+//   } else if (sidebar.classList.contains("d-flex")) {
+//     sidebar.classList.remove("d-flex");
+//     sidebar.classList.add("d-none");
+//     mainContent.classList.remove("w-85", "start-15");
+//   } else {
+//     sidebar.classList.remove("d-none");
+//     sidebar.classList.add("d-flex");
+//     mainContent.classList.add("w-85", "start-15");
+//   }
+// };
+export default [scripts,styles,styleManager,blockManager,layerManager,traitManager,selectorManager,selectorManager,panels,deviceManager,assetManager];
