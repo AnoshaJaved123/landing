@@ -108,7 +108,7 @@ const Post = ({ selectPage }) => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: pageId,
+            Authorization: selectPage._id,
           },
         }
       );
@@ -134,7 +134,7 @@ const Post = ({ selectPage }) => {
           {
             headers: {
               "Content-Type": "application/json",
-              Authorization: pageId,
+              Authorization: selectPage._id,
             },
           }
         );
@@ -160,7 +160,7 @@ const Post = ({ selectPage }) => {
             headers: {
               Accept: "application/json",
               "Content-type": "application/json",
-              Authorization: pageId,
+              Authorization: selectPage._id,
             },
             body: JSON.stringify({
               html: htmldata,
@@ -207,7 +207,7 @@ const Post = ({ selectPage }) => {
     });
 
     setEditor(editor);
-  }, []);
+  }, [selectPage._id]);
 
   return (
     <>
