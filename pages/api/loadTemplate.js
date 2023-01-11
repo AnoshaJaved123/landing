@@ -1,4 +1,4 @@
-import Template from '../../Modules/Template'
+import Template from "../../Modules/template";
 import connectDb from '../../Database/dbConfig'
 
 
