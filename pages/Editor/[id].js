@@ -31,7 +31,6 @@ import {
   styles,
 } from "./grapesUtils.js";
 import Blocks from "./blocks";
-import $ from "jquery";
 import Topnav from "./topnav";
 
 const Post = ({ selectPage }) => {
@@ -208,7 +207,7 @@ const Post = ({ selectPage }) => {
     });
 
     setEditor(editor);
-  }, [pageId]);
+  }, []);
 
   return (
     <>
