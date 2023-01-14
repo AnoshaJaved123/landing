@@ -457,7 +457,7 @@ const Post = ({ selectPage }) => {
         gsCustome,
         exportPlugin,
         grapesjsStyleBg,
-        template,
+        // template,
         ],
       pluginsOpts: {
         gjsbasicplugin: {},
@@ -474,7 +474,7 @@ const Post = ({ selectPage }) => {
           // }
         },
         grapesjsStyleBg: {},
-        template:{},
+        // template:{},
          },
     });
     //Load function

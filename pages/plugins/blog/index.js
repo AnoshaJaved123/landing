@@ -6,7 +6,7 @@ import contactBlocks3 from './contactblock3.js'
 
 
 
-export default grapesjs.plugins.add("contactComponent", (editor, opts = {}) => {
+export default grapesjs.plugins.add("contactComponent", (editor, opts = {}) => { 
   let options = {
     label: "Contact Test",
     name: "contact",
