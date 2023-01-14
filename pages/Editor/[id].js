@@ -9,14 +9,14 @@ import grapesjs from "grapesjs";
 import Image from "next/image";
 import exportPlugin from "grapesjs-plugin-export";
 import grapesjsStyleBg from "grapesjs-style-bg";
-// import navbarComponent from "../plugins/navbar";
-// import gallaryComponent from "../plugins/gallary";
-// import blogComponent from "../plugins/blog"
-// import contactComponent from '../plugins/contact'
-// import cardComponent from '../plugins/cards'
-// import heroComponent from '../plugins/hero';
-// import testimonialComponent from '../plugins/testimonials';
-// import footerComponent from "../plugins/footer";
+import navbarComponent from "../plugins/navbar";
+import gallaryComponent from "../plugins/gallary";
+import blogComponent from "../plugins/blog"
+import contactComponent from '../plugins/contact'
+import cardComponent from '../plugins/cards'
+import heroComponent from '../plugins/hero';
+import testimonialComponent from '../plugins/testimonials';
+import footerComponent from "../plugins/footer";
 // import {
 //   styleManager,
 //   traitManager,
@@ -452,14 +452,14 @@ const Post = ({ selectPage }) => {
         exportPlugin,
         grapesjsStyleBg,
         // template,
-        // navbarComponent,
-        // heroComponent,
-        // cardComponent,
-        // gallaryComponent,
-        // blogComponent,
-        // contactComponent,
-        // testimonialComponent,
-        // footerComponent
+        navbarComponent,
+        heroComponent,
+        cardComponent,
+        gallaryComponent,
+        blogComponent,
+        contactComponent,
+        testimonialComponent,
+        footerComponent
       ],
       pluginsOpts: {
         gjsbasicplugin: {},
@@ -477,17 +477,16 @@ const Post = ({ selectPage }) => {
         },
         grapesjsStyleBg: {},
         // template:{},
-        // heroComponent:{},
-        // navbarComponent: {},
-        // cardComponent:{},
-        // gallaryComponent:{},
-        // blogComponent:{},
-        // contactComponent:{},
-        // testimonialComponent:{},
-        // footerComponent:{}
+        heroComponent:{},
+        navbarComponent: {},
+        cardComponent:{},
+        gallaryComponent:{},
+        blogComponent:{},
+        contactComponent:{},
+        testimonialComponent:{},
+        footerComponent:{}
       },
     });
-    
     //Load function
 
     const loadfun = async (req, res) => {
