@@ -17,7 +17,6 @@ import cardComponent from '../../plugins/cards'
 import heroComponent from '../../plugins/hero';
 import testimonialComponent from '../../plugins/testimonials';
 import footerComponent from "../../plugins/footer";
-import test from '../../plugins/test'
 // import {
 //   styleManager,
 //   traitManager,
