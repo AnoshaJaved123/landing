@@ -10,7 +10,7 @@ import Image from "next/image";
 import exportPlugin from "grapesjs-plugin-export";
 import grapesjsStyleBg from "grapesjs-style-bg";
 
-import template from "../plugins/templates";
+import template from "../../plugins/templates";
 // import {
 //   styleManager,
 //   traitManager,

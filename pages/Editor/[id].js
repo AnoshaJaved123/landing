@@ -9,14 +9,15 @@ import grapesjs from "grapesjs";
 import Image from "next/image";
 import exportPlugin from "grapesjs-plugin-export";
 import grapesjsStyleBg from "grapesjs-style-bg";
-import navbarComponent from "../plugins/navbar";
-import gallaryComponent from "../plugins/gallary";
-import blogComponent from "../plugins/blog"
-import contactComponent from '../plugins/contact'
-import cardComponent from '../plugins/cards'
-import heroComponent from '../plugins/hero';
-import testimonialComponent from '../plugins/testimonials';
-import footerComponent from "../plugins/footer";
+import navbarComponent from "../../plugins/navbar";
+import gallaryComponent from "../../plugins/gallary";
+import blogComponent from "../../plugins/blog"
+import contactComponent from '../../plugins/contact'
+import cardComponent from '../../plugins/cards'
+import heroComponent from '../../plugins/hero';
+import testimonialComponent from '../../plugins/testimonials';
+import footerComponent from "../../plugins/footer";
+import test from '../../plugins/test'
 // import {
 //   styleManager,
 //   traitManager,
@@ -477,7 +478,7 @@ const Post = ({ selectPage }) => {
         },
         grapesjsStyleBg: {},
         // template:{},
-        heroComponent:{},
+        // heroComponent:{},
         navbarComponent: {},
         cardComponent:{},
         gallaryComponent:{},
