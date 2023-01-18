@@ -8,7 +8,7 @@ import contactBlocks3 from './contactblock3.js'
 
 export default grapesjs.plugins.add("contactComponent", (editor, opts = {}) => { 
   let options = {
-    label: "Contact Test",
+    label: "Contact Blue Form",
     name: "contact",
     category: "Contact",
   };
@@ -16,7 +16,7 @@ export default grapesjs.plugins.add("contactComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   } 
   let options2 = {
-    label: "Contact2 Test",
+    label: "Contact Gray",
     name: "contact2",
     category: "Contact",
   };
@@ -24,7 +24,7 @@ export default grapesjs.plugins.add("contactComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options2[name];
   }
   let options3 = {
-    label: "Contact3 Test",
+    label: "Contact",
     name: "contact3",
     category: "Contact",
   };

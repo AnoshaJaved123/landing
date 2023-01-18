@@ -7,23 +7,23 @@ import cardBlocks4 from './cardblock4.js'
 import cardBlocks5 from './cardblock5'
 export default grapesjs.plugins.add("cardComponent", (editor, opts = {}) => {
   let options = {
-    label: "Card Test",
+    label: "Bubble Bee",
     name: "card",
     category: "Cards",
   };
   for (let name in options) {
     if (!(name in opts)) opts[name] = options[name];
   }
-  let options2 = {
-    label: "Card2 Test",
-    name: "card2",
-    category: "Cards",
-  };
-  for (let name in options2) {
-    if (!(name in opts)) opts[name] = options2[name];
-  }
+  // let options2 = {
+  //   label: "Red Hover Style",
+  //   name: "card2",
+  //   category: "Cards",
+  // };
+  // for (let name in options2) {
+  //   if (!(name in opts)) opts[name] = options2[name];
+  // }
   let options3 = {
-    label: "Card3 Test",
+    label: "Red Hover Style",
     name: "card3",
     category: "Cards",
   };
@@ -32,7 +32,7 @@ export default grapesjs.plugins.add("cardComponent", (editor, opts = {}) => {
   }
 
   let options4 = {
-    label: "Card4 Test",
+    label: "Dark Theme",
     name: "card4",
     category: "Cards",
   };
@@ -40,7 +40,7 @@ export default grapesjs.plugins.add("cardComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options4[name];
   }
   let options5 = {
-    label: "Card5 Test",
+    label: "Rainbow Card",
     name: "card5",
     category: "Cards",
   };

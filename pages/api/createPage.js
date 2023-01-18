@@ -33,7 +33,7 @@ const handler = async (req, res) => {
             })
             await p.save()
             // await new Page({user:u._id, name:"empty", slug:"empty"}).save()
-            res.status(200).json({ success: 'Page Created' })
+            res.status(200).json({ success:true})
 
     }
     else {

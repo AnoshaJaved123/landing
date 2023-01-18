@@ -71,7 +71,7 @@ export default (editor, opts = {}) => {
     `;
     bm.add(opts.name, {
       label: `
-      <i class="fa fa-arrows-h"></i>
+      <img class='labelimg' src='/gallar3.PNG'/>
       <div class="gjs-block-label">
         ${opts.label}
       </div> 

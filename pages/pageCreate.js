@@ -5,6 +5,10 @@ import { parseCookies } from 'nookies';
 import { MdOutlineEditNote } from 'react-icons/md';
 import { FaRegTrashAlt } from 'react-icons/fa';
 import Link from 'next/link'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const PageCreate = ({ user, page }) => {
@@ -23,19 +27,43 @@ const PageCreate = ({ user, page }) => {
       setIsValid(false);
       return;
     }
-    const res =await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/createPage`,{
-      method:"POST",
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/createPage`, {
+      method: "POST",
       headers: {
-          Accept: "application/json",
-          "Content-type": "application/json",
-          "Authorization": token
-        },
-        body:JSON.stringify({name})
-  })
-  const response = await res.json()
-  // console.log(response)
-  window.location.reload();
-   };
+        Accept: "application/json",
+        "Content-type": "application/json",
+        "Authorization": token
+      },
+      body: JSON.stringify({ name })
+    })
+    const response = await res.json()
+    if (response.success == true) {
+      toast.success('Page Created', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+    }
+    else {
+      toast.error('Invalid Credentials', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+
+  };
 
 
   useEffect(() => {
@@ -49,9 +77,46 @@ const PageCreate = ({ user, page }) => {
     }
   }, [])
 
+  const delPage = async (id) => {
+    const res2 = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/deletePage`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(id)
+    })
+    const response2 = await res2.json()
+    if (response2.success == true) {
+      toast.error('Page Deleted', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+    }
+  }
 
   return (
     <>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <Header />
       <div>
         <section className="text-gray-600 body-font">
 
@@ -116,7 +181,7 @@ const PageCreate = ({ user, page }) => {
                   </tr>
                 </thead>
                 <tbody>
-                {pages
+                  {pages
                     ? pages.map((p) => (
                       <tr key={p._id}>
                         <td>{p._id}</td>
@@ -125,16 +190,18 @@ const PageCreate = ({ user, page }) => {
                         <td>
                           {/* <Link to={`/editor/${page._id}`}>Edit</Link> */}
                           <div className="flex">
-                          <Link passHref={true} key={p._id} href={`/Editor/${p._id}`} >
-                          <MdOutlineEditNote size={30} color={'blue'}/>
-                          </Link>
-                          <FaRegTrashAlt size={20} color={'red'}/>
+                            <Link passHref={true} key={p._id} href={`/Editor/${p._id}`} >
+                              <MdOutlineEditNote className="ml-5" size={30} color={'blue'} />
+                            </Link>
+                            <button onClick={() => { delPage({ id: p._id }) }} >
+                              <FaRegTrashAlt className="ml-10 mt-1" size={20} color={'red'} />
+                            </button>
                           </div>
                         </td>
                       </tr>
                     ))
                     : "No Page"}
-                    
+
                 </tbody>
               </table>
             </div>
@@ -142,6 +209,7 @@ const PageCreate = ({ user, page }) => {
         </section>
 
       </div>
+      <Footer />
     </>
   )
 }

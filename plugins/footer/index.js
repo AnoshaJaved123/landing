@@ -10,7 +10,7 @@ import footerBlocks5 from './footerBlock5'
 
 export default grapesjs.plugins.add("footerComponent", (editor, opts = {}) => {
   let options = {
-    label: "Footer Test",
+    label: "Sea Water Whale Footer",
     name: "Footer",
     category: "Footer",
   };
@@ -18,7 +18,7 @@ export default grapesjs.plugins.add("footerComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   }
   let options2 = {
-    label: "Footer2 Test",
+    label: "Gray Footer",
     name: "Footer2",
     category: "Footer",
   };
@@ -26,7 +26,7 @@ export default grapesjs.plugins.add("footerComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options2[name];
   }
   let options3 = {
-    label: "Footer3 Test",
+    label: "Sky Footer",
     name: "Footer3",
     category: "Footer",
   };
@@ -34,7 +34,7 @@ export default grapesjs.plugins.add("footerComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options3[name];
   }
   let options4 = {
-    label: "Footer4 Test",
+    label: "Small Footer",
     name: "Footer4",
     category: "Footer",
   };
@@ -42,7 +42,7 @@ export default grapesjs.plugins.add("footerComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options4[name];
   }
   let options5 = {
-    label: "Footer5 Test",
+    label: "Purple Footer",
     name: "Footer5",
     category: "Footer",
   };

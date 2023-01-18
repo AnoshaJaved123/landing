@@ -10,7 +10,7 @@ import navblock6 from "./block6"
 
 export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
   let options = {
-    label: "Navbar Test",
+    label: "Standard Navbar",
     name: "nav",
     category: "Navigation Section",
   };
@@ -18,7 +18,7 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   }
   let options2 = {
-    label: "Navbar2 Test",
+    label: "Multi Color Nav",
     name: "nav2",
     category: "Navigation Section",
   };
@@ -26,7 +26,7 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   }
   let options3 = {
-    label: "Navbar3 Test",
+    label: "Menu Dropdown",
     name: "nav3",
     category: "Navigation Section",
   };
@@ -34,7 +34,7 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = option3[name];
   }
   let options4 = {
-    label: "Navbar4 Test",
+    label: "Company Navbar",
     name: "nav4",
     category: "Navigation Section",
   };
@@ -42,7 +42,7 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options4[name];
   }
   let options5 = {
-    label: "Navbar5 Test",
+    label: "Company2 Navbar",
     name: "nav5",
     category: "Navigation Section",
   };
@@ -50,7 +50,7 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options5[name];
   }
   let options6 = {
-    label: "Navbar6 Test",
+    label: "Blue Logo Navbar",
     name: "nav6",
     category: "Navigation Section",
   };

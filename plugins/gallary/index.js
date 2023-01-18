@@ -8,7 +8,7 @@ import gallaryBlocks4 from "./gallaryblock4";
 
 export default grapesjs.plugins.add("gallaryComponent", (editor, opts = {}) => {
   let options = {
-    label: "Gallary Test",
+    label: "W Gallary",
     name: "gallary",
     category: "Gallary",
   };
@@ -16,7 +16,7 @@ export default grapesjs.plugins.add("gallaryComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   }
   let options2 = {
-    label: "Gallary2 Test",
+    label: "Hover Gallary",
     name: "gallary2",
     category: "Gallary",
   };
@@ -24,21 +24,21 @@ export default grapesjs.plugins.add("gallaryComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options2[name];
   }
   let options3 = {
-    label: "Gallary3 Test",
+    label: "Mini Gallary",
     name: "gallary3",
     category: "Gallary",
   };
   for (let name in options3) {
     if (!(name in opts)) opts[name] = options3[name];
   }
-  let options4 = {
-    label: "Gallary4 Test",
-    name: "gallary4",
-    category: "Gallary",
-  };
-  for (let name in options4) {
-    if (!(name in opts)) opts[name] = options4[name];
-  }
+  // let options4 = {
+  //   label: "Gallary4 Test",
+  //   name: "gallary4",
+  //   category: "Gallary",
+  // };
+  // for (let name in options4) {
+  //   if (!(name in opts)) opts[name] = options4[name];
+  // }
  gallaryBlocks(editor, options);
  gallaryBlocks2(editor, options2);
  gallaryBlocks3(editor, options3);

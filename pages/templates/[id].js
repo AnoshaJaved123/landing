@@ -595,32 +595,153 @@ const Post = ({ selectPage }) => {
     setEditor(editor);
   }, [selectPage.slug]);
 
+  const toggleSidebar = (fromEditor) => {
+    const sidebar = document.getElementById("navbar");
+    const mainContent = document.getElementById("main-content");
+    if (fromEditor) {
+      sidebar.classList.remove("d-flex");
+      sidebar.classList.add("d-none");
+      mainContent.classList.remove("w-85", "start-15");
+    } else if (sidebar.classList.contains("d-flex")) {
+      sidebar.classList.remove("d-flex");
+      sidebar.classList.add("d-none");
+      mainContent.classList.remove("w-85", "start-15");
+    } else {
+      sidebar.classList.remove("d-none");
+      sidebar.classList.add("d-flex");
+      mainContent.classList.add("w-85", "start-15");
+    }
+  };
+  const handleClick = () => {
+    toggleSidebar(false);
+  };
+  
   return (
     <>
-      <div id="navbar" className="sidenav d-flex flex-column overflow-scroll">
-        <nav className="navbar navbar-light">
-          <div className="container-fluid">
-          <Image width={50} height={50} alt="logo" className="ml-14" src={'/layers.png'} />
-            <h2 className="text-3xl font-semibold font-cursive2">Web Builder</h2>
-          </div>
-        </nav>
-     
-        <Blocks />
-      </div>
-      <div className="main-content">
-     <Topnav/>
-        <div id="editor"></div>
-        {/* <div
-          className="modal fade"
-          id="addPageModal"
-          tabIndex="-1"
-          aria-labelledby="addPageModalLabel"
-          aria-hidden="true"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
+          <div className="App">
+        <div
+          id="navbar"
+          className="sidenav d-flex flex-column overflow-scroll position-fixed"
         >
-          
-        </div> */}
+          <nav className="navbar navbar-light">
+            <div className="container-fluid">
+            <Image width={50} height={50} alt="logo" className="ml-14" src={'/layers.png'} />
+              <span className="navbar-brand mb-0 h3 logo">Web Builder</span>
+            </div>
+          </nav>
+          {/* <PageSection pages={pages} /> */}
+          <ul className="nav nav-tabs" id="myTab" role="tablist">
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link active"
+                id="block-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#block"
+                type="button"
+                role="tab"
+                aria-controls="block"
+                aria-selected="true"
+              >
+                <i className="fa fa-cubes"></i>
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="layer-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#layer"
+                type="button"
+                role="tab"
+                aria-controls="layer"
+                aria-selected="false"
+              >
+                <i className="fa fa-tasks"></i>
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="style-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#style"
+                type="button"
+                role="tab"
+                aria-controls="style"
+                aria-selected="false"
+              >
+                <i className="fa fa-paint-brush"></i>
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="trait-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#trait"
+                type="button"
+                role="tab"
+                aria-controls="trait"
+                aria-selected="false"
+              >
+                <i className="fa fa-cog"></i>
+              </button>
+            </li>
+          </ul>
+          <div className="tab-content">
+            <div
+              className="tab-pane fade show active"
+              id="block"
+              role="tabpanel"
+              aria-labelledby="block-tab"
+            >
+              <div id="blocks"></div>
+            </div>
+            <div
+              className="tab-pane fade"
+              id="layer"
+              role="tabpanel"
+              aria-labelledby="layer-tab"
+            >
+              <div id="layers-container"></div>
+            </div>
+            <div
+              className="tab-pane fade"
+              id="style"
+              role="tabpanel"
+              aria-labelledby="style-tab"
+            >
+              <div id="styles-container"></div>
+            </div>
+            <div
+              className="tab-pane fade"
+              id="trait"
+              role="tabpanel"
+              aria-labelledby="trait-tab"
+            >
+              <div id="trait-container"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="main-content position-relative w-85 start-15"
+          id="main-content"
+        >
+          <nav className="navbar navbar-light">
+            <div className="container">
+              <button
+                className="btn btn-sm btn-outline-primary"
+                onClick={handleClick}
+              >
+                <i className="fa fa-bars"></i>
+              </button>
+              <div className="panel__devices"></div>
+              <div className="panel__editor"></div>
+              <div className="panel__basic-actions"></div>
+            </div>
+          </nav>
+          <div id="editor"></div>
+        </div>
       </div>
     </>
   );

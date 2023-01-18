@@ -7,7 +7,7 @@ import blogBlocks2 from './blogblock2.js'
 
 export default grapesjs.plugins.add("blogComponent", (editor, opts = {}) => {
   let options = {
-    label: "Blog Test",
+    label: "Food Blog",
     name: "blog",
     category: "Blogs",
   };
@@ -15,7 +15,7 @@ export default grapesjs.plugins.add("blogComponent", (editor, opts = {}) => {
     if (!(name in opts)) opts[name] = options[name];
   }
   let options2 = {
-    label: "Blog2 Test",
+    label: "Digital World",
     name: "blog2",
     category: "Blogs",
   };

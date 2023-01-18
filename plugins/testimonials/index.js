@@ -6,7 +6,7 @@ import testimonialBlocks3 from './testimonialblock3.js'
 
 export default grapesjs.plugins.add("testimonialComponent", (editor, opts = {}) => {
   let options = {
-    label: "testimonial Test",
+    label: "Grid Ttestimonial ",
     name: "testimonial",
     category: "Testimonials",
   };
@@ -14,7 +14,7 @@ export default grapesjs.plugins.add("testimonialComponent", (editor, opts = {}) 
     if (!(name in opts)) opts[name] = options[name];
   }
   let options2 = {
-    label: "testimonial2 Test",
+    label: "Black & White Testimonial",
     name: "testimonial2",
     category: "Testimonials",
   };
@@ -22,7 +22,7 @@ export default grapesjs.plugins.add("testimonialComponent", (editor, opts = {}) 
     if (!(name in opts)) opts[name] = options2[name];
   }
   let options3 = {
-    label: "testimonial3 Test",
+    label: "Avatar Testimonial",
     name: "testimonial3",
     category: "Testimonials",
   };

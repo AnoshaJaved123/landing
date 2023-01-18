@@ -327,7 +327,7 @@ section.t-bq-section {
       `;
     bm.add(opts.name, {
       label: `
-        <i class="fa fa-arrows-h"></i>
+      <img class='labelimg' src='/test2.PNG'/>
         <div class="gjs-block-label">
           ${opts.label}
         </div> 

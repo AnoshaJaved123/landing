@@ -114,8 +114,4 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   resume(editor, options9);
   resume2(editor, options10);
   foodweb2(editor, options11);
-
-
-
-
 });
