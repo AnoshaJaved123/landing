@@ -108,7 +108,7 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   darkwebsite(editor, options3);
   fashionweb(editor, options4);
   purplelanding(editor, options5);
-  computerwebsite(editor, options6);
+  // computerwebsite(editor, options6);
   foodweb(editor, options7);
   easyweb(editor, options8);
   resume(editor, options9);
