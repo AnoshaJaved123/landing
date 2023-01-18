@@ -191,7 +191,7 @@ export default (editor, opts = {}) => {
     `;
     bm.add(opts.name, {
       label: `
-      <img class='labelimg' src='/contact2.PNG'/>
+      <img class='labelimg' src='/contact2.png'/>
       <div class="gjs-block-label">
         ${opts.label}
       </div> 

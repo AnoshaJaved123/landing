@@ -72,7 +72,7 @@ export default (editor, opts = {}) => {
     `;
   bm.add(opts.name, {
     label: `
-    <img class='labelimg' src='/card2.PNG'/>
+    <img class='labelimg' src='/card2.png'/>
       <div class="gjs-block-label">
         ${opts.label}
       </div> 

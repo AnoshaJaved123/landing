@@ -138,7 +138,7 @@ ul {
     `;
   bm.add(opts.name, {
     label: `
-    <img class='labelimg' src='/contact1.PNG'/>
+    <img class='labelimg' src='/contact1.png'/>
     <div class="gjs-block-label">
         ${opts.label}
       </div> 
