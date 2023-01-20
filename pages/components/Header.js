@@ -6,7 +6,7 @@ const Header = () => {
 
 
     return (
-   <nav className="nav flex flex-wrap items-center justify-between px-4 ">
+   <nav className="nav flex flex-wrap items-center justify-between px-4 shadow-2xl sticky ">
   <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
   <Image width={60} height={60} alt="logo" className="px-3" src={'/layers.png'} /> 
 
