@@ -31,18 +31,18 @@ export default grapesjs.plugins.add("gallaryComponent", (editor, opts = {}) => {
   for (let name in options3) {
     if (!(name in opts)) opts[name] = options3[name];
   }
-  // let options4 = {
-  //   label: "Gallary4 Test",
-  //   name: "gallary4",
-  //   category: "Gallary",
-  // };
-  // for (let name in options4) {
-  //   if (!(name in opts)) opts[name] = options4[name];
-  // }
+  let options4 = {
+    label: "Gallary4 Test",
+    name: "gallary4",
+    category: "Gallary",
+  };
+  for (let name in options4) {
+    if (!(name in opts)) opts[name] = options4[name];
+  }
  gallaryBlocks(editor, options);
  gallaryBlocks2(editor, options2);
  gallaryBlocks3(editor, options3);
-//  gallaryBlocks4(editor, options4);
+ gallaryBlocks4(editor, options4);
 
 
 

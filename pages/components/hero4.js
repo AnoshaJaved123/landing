@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero4 = () => {
   return (
-   <section className="mb-40">
+   <section className="mb-40 ">
   <nav className="navbar navbar-expand-lg shadow-md py-0 bg-white relative flex items-center w-full justify-between">
     {/* <div className="px-6 w-full flex flex-wrap items-center justify-between">
       <div className="flex items-center">

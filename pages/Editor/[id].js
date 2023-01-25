@@ -649,7 +649,7 @@ const Post = ({ selectPage }) => {
       <div className="App">
         <div
           id="navbar"
-          className="sidenav d-flex flex-column overflow-scroll position-fixed"
+          className="sidenav d-flex flex-column overflow-scroll position-fixed "
         >
           <nav className="navbar navbar-light">
             <div className="container-fluid">

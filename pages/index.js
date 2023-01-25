@@ -7,6 +7,10 @@ import Leftsection from './components/leftsection'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Herotri from './components/herotri'
+import Features from './components/Features'
+import Templates from './components/templates'
+import Ctaform from './components/ctaform'
 export default function Home() {
   return (
     <>
@@ -16,18 +20,20 @@ export default function Home() {
       {/* <Hero /> */}
       {/* <Hero2/> */}
       {/* <Hero3/> */}
-      <Hero4/>
+      {/* <Hero4/> */}
+      <Herotri/>
       {/* <Hero5/> */}
       {/* <Hero6/> */}
       {/* 2. Trusted */}
+      <Features/>
       <Trusted />
 
       {/* 3.SERVICES SECTION*/}
       {/* <Services /> */}
       <Rightsection/>
       <Leftsection/>
-      {/*4. TEAM */}
-      {/* <Team /> */}
+      <Templates/>
+      <Ctaform/>
       {/*5.PRICING */}
 
       {/* <Pricing /> */}

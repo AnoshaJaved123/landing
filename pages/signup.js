@@ -5,7 +5,8 @@ import { useRouter } from 'next/router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head';
-
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const Signup = () => {
 
@@ -75,6 +76,7 @@ const Signup = () => {
         <title>Signup</title>
 
       </Head>
+      <Header/>
       <section className=" body-font overflow-hidden" >
 
         <ToastContainer
@@ -131,7 +133,7 @@ const Signup = () => {
           </div>
         </div>
       </section>
-
+<Footer/>
     </div>
   )
 }
