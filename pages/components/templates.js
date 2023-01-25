@@ -5,7 +5,7 @@ const Templates = () => {
     <section className='mt-20 mb-20 ml-5 justify-center'>
       <h2 className="text-center text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">80+ HTML CSS Websites</h2>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/purplewebfront.PNG)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/purplewebfront-min.PNG)' }}>
           <h1 className="text-shadow">Home Cleaners</h1>
         </div>
         <div className="back">
@@ -14,7 +14,7 @@ const Templates = () => {
         </div>
       </div>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/food2front.png)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/food2front-min.png)' }}>
           <h1 className="text-shadow">Restraunt Website</h1>
         </div>
         <div className="back">
@@ -23,7 +23,7 @@ const Templates = () => {
         </div>
       </div>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/gymwebfront.png)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/gymwebfront-min.png)' }}>
           <h1 className="text-shadow">Gym Website</h1>
         </div>
         <div className="back">
@@ -32,7 +32,7 @@ const Templates = () => {
         </div>
       </div>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/foodwebfront.PNG)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/foodwebfront-min.PNG)' }}>
           <h1 className="text-shadow">Pizza Shop</h1>
         </div>
         <div className="back">
@@ -41,7 +41,7 @@ const Templates = () => {
         </div>
       </div>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/landingfront.png)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/landingfront-min.png)' }}>
           <h1 className="text-shadow">Simple Landing</h1>
         </div>
         <div className="back">
@@ -50,7 +50,7 @@ const Templates = () => {
         </div>
       </div>
       <div className="flip">
-        <div className="front" style={{ backgroundImage: 'url(/portfoliofront.png)' }}>
+        <div className="front" style={{ backgroundImage: 'url(/portfoliofront-min.png)' }}>
           <h1 className="text-shadow">Portfolio Website</h1>
         </div>
         <div className="back">
