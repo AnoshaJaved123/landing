@@ -7,7 +7,7 @@ const Leftsection = () => {
  
   <div className="block md:flex mb-10 mt-10">
   <div className="flex-1 ml-10 " >
-  <Image width={700} height={700} alt='...' src={'/template-min.png'}/>
+  <Image width={600} height={600} alt='...' src={'/template-min.png'}/>
 
   </div>
   <div className="flex-1 flex justify-center items-center bg-white p-10 md:p-0">
