@@ -26,7 +26,7 @@ export default function Home() {
       {/* <Hero6/> */}
       {/* 2. Trusted */}
       <Features/>
-      <Trusted />
+      {/* <Trusted /> */}
 
       {/* 3.SERVICES SECTION*/}
       {/* <Services /> */}
