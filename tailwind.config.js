@@ -15,4 +15,7 @@ module.exports = {
     }
   },
   plugins: [],
+  images: {
+    domains: ['tuk-cdn.s3.amazonaws.com'], //Domain of image host
+  },
 }
