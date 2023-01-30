@@ -6,6 +6,7 @@ import navblock3 from "./block3"
 import navblock4 from "./block4"
 import navblock5 from "./block5"
 import navblock6 from "./block6"
+import loadComponents from "./component";
 
 
 export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
@@ -65,5 +66,5 @@ export default grapesjs.plugins.add("navbarComponent", (editor, opts = {}) => {
   navblock5(editor, options5);
   navblock6(editor, options6);
 
-  // loadComponents(editor, opts);
+  loadComponents(editor, opts);
 });

@@ -1,4 +1,5 @@
-// import PageCreate from "./pageCreate";
+import React from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import 'bootstrap/dist/css/bootstrap.css'
 import Hero4 from './components/hero4'
 import Hero3 from './components/hero3'
@@ -33,12 +34,15 @@ export default function Home() {
       <Leftsection/>
       <Templates/>
       <Ctaform/>
-      {/*5.PRICING */}
-
-      {/* <Pricing /> */}
-      {/* 6.Library */}
-      {/* <Library/> */}
-      {/* <Library2/> */}
+    
+      <FloatingWhatsApp
+        phoneNumber="00923214920880"
+        accountName="Help Center"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+      />
       <Footer/>
     </>
   )

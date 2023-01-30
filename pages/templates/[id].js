@@ -11,21 +11,7 @@ import exportPlugin from "grapesjs-plugin-export";
 import grapesjsStyleBg from "grapesjs-style-bg";
 
 import template from "../../plugins/templates";
-// import {
-//   styleManager,
-//   traitManager,
-//   layerManager,
-//   selectorManager,
-//   panels,
-//   deviceManager,
-//   storageManager,
-//   assetManager,
-//   blockManager,
-//   scripts,
-//   styles,
-// } from "./grapesUtils.js";
-import Blocks from "./blocks";
-import Topnav from "./topnav";
+
 
 const Post = ({ selectPage }) => {
   const pageId = selectPage.slug;
