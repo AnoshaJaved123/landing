@@ -12,6 +12,7 @@ import resume2 from "./resume2";
 import foodweb2 from "./foodweb2";
 import candlebussiness from "./candlebussiness";
 import teagreen from "./teagreen";
+import skyblue from "./skyblue";
 
 export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => {
   let options = {
@@ -122,6 +123,15 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   for (let name in options13) {
     if (!(name in opts)) opts[name] = options13[name];
   }
+ 
+  let options14 = {
+    label: "Sky Blue Website",
+    name: "skyblue",
+    category: "TEMPLATES",
+  };
+  for (let name in options14) {
+    if (!(name in opts)) opts[name] = options14[name];
+  }
 
 
   templateblock(editor, options);
@@ -136,5 +146,6 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   resume2(editor, options10);
   foodweb2(editor, options11);
   candlebussiness(editor,options12);
-  teagreen(editor,options13)
+  teagreen(editor,options13);
+  skyblue(editor,options14)
 });

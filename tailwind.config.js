@@ -16,6 +16,6 @@ module.exports = {
   },
   plugins: [],
   images: {
-    domains: ['tuk-cdn.s3.amazonaws.com'], //Domain of image host
+    domains: ['tuk-cdn.s3.amazonaws.com','res.cloudinary.com'], //Domain of image host
   },
 }

@@ -32,6 +32,7 @@ export default function Home() {
       {/* <Services /> */}
       {/* <Rightsection/> */}
       <Leftsection/>
+      <Rightsection/>
       <Templates/>
       <Ctaform/>
     
