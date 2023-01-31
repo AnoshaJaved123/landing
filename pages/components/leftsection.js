@@ -25,10 +25,10 @@ const Leftsection = () => {
       </a>
     </div>
     <div className="col-md-6 p-0 text-center order-1 order-sm-2">
-      <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100" alt />
+      <Image width={600} height={500} src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100" alt='...' />
     </div>
     <div className="col-md-6 p-0 text-center">
-      <img src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100" alt />
+      <Image width={600} height={500} src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100" alt='...' />
     </div>
     <div className="col-md-6 p-4 p-sm-5">
       <small className="text-uppercase" style={{color: '#282828'}}>About us</small>
