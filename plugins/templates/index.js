@@ -10,6 +10,8 @@ import easyweb from "./easyweb";
 import resume from "./resume";
 import resume2 from "./resume2";
 import foodweb2 from "./foodweb2";
+import candlebussiness from "./candlebussiness";
+import teagreen from "./teagreen";
 
 export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => {
   let options = {
@@ -102,6 +104,25 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
     if (!(name in opts)) opts[name] = options11[name];
   }
 
+  
+  let options12 = {
+    label: "Candle Website",
+    name: "candle",
+    category: "TEMPLATES",
+  };
+  for (let name in options12) {
+    if (!(name in opts)) opts[name] = options12[name];
+  }
+  
+  let options13 = {
+    label: "Tea Green Website",
+    name: "green",
+    category: "TEMPLATES",
+  };
+  for (let name in options13) {
+    if (!(name in opts)) opts[name] = options13[name];
+  }
+
 
   templateblock(editor, options);
   gymLanding(editor, options2);
@@ -114,4 +135,6 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   resume(editor, options9);
   resume2(editor, options10);
   foodweb2(editor, options11);
+  candlebussiness(editor,options12);
+  teagreen(editor,options13)
 });

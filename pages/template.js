@@ -354,6 +354,26 @@ const Template = () => {
                 <p className="mt-1">$19.00</p>
               </div>
             </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <Link passHref={true} key={10} href={`/templates/${13}`} className="block relative h-70 rounded overflow-hidden">
+                <Image alt='...' src={'/green.png'} width={600} height={900} className='object-cover object-center w-full h-full block' />
+              </Link>
+              <div className="mt-4">
+                <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 className="text-gray-900 title-font text-lg font-medium">Green Tea Webpage</h2>
+                <p className="mt-1">$19.00</p>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <Link passHref={true} key={10} href={`/templates/${14}`} className="block relative h-70 rounded overflow-hidden">
+                <Image alt='...' src={'/candle.png'} width={600} height={1000} className='object-cover object-center w-full h-full block' />
+              </Link>
+              <div className="mt-4">
+                <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 className="text-gray-900 title-font text-lg font-medium">Candle Webpage</h2>
+                <p className="mt-1">$19.00</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
