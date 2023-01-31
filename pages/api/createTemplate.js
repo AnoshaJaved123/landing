@@ -7,8 +7,8 @@ const handler = async (req, res) => {
                 // console.log(req.body)
                 // const {content} =JSON.parse(req.body)
                 let u = new Template({
-                    slug:14,
-                    name:'Candle website',
+                    slug:15,
+                    name:'Yellow website',
                     content:req.body 
                  })
                 await u.save()

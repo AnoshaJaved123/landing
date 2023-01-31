@@ -17,21 +17,7 @@ import cardComponent from '../../plugins/cards'
 import heroComponent from '../../plugins/hero';
 import testimonialComponent from '../../plugins/testimonials';
 import footerComponent from "../../plugins/footer";
-// import {
-//   styleManager,
-//   traitManager,
-//   layerManager,
-//   selectorManager,
-//   panels,
-//   deviceManager,
-//   storageManager,
-//   assetManager,
-//   blockManager,
-//   scripts,
-//   styles,
-// } from "./grapesUtils.js";
-import Blocks from "./blocks";
-import Topnav from "./topnav";
+import banner from "../../plugins/banner";
 
 const Post = ({ selectPage }) => {
   const pageId = selectPage._id;
@@ -455,6 +441,7 @@ const Post = ({ selectPage }) => {
         navbarComponent,
         heroComponent,
         cardComponent,
+        banner,
         gallaryComponent,
         blogComponent,
         contactComponent,
@@ -465,21 +452,13 @@ const Post = ({ selectPage }) => {
         gjsbasicplugin: {},
         // "grapesjsTailwind": {},
         exportPlugin: {
-          // root: {
-          //   'index.html': editor => `
-          //   <head>
-          //     <link href="${styles}" />
-          //     <script src="${scripts}" />
-          //   </head>
-          //   <body>${editor.getHtml()}</body>
-          //   `
-          // }
-        },
+          },
         grapesjsStyleBg: {},
         // template:{},
         // heroComponent:{},
         navbarComponent: {},
         cardComponent: {},
+        banner:{},
         gallaryComponent: {},
         blogComponent: {},
         contactComponent: {},

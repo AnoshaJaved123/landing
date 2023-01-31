@@ -33,8 +33,9 @@ export default function Home() {
       {/* <Rightsection/> */}
       <Leftsection/>
       <Rightsection/>
-      <Templates/>
+      {/* <Templates/> */}
       <Ctaform/>
+      
     
       <FloatingWhatsApp
         phoneNumber="00923214920880"

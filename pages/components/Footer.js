@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="text-center">
-        <span className="text-sm tracking-wide">Copyright © Anosha Javed <span id="year" /> | All right reserved</span>
+        <span className="text-sm tracking-wide">Copyright ©  <span id="year" /> | All right reserved</span>
       </div>
     </div>
   </div>

@@ -324,13 +324,14 @@ const Template = () => {
                 <p className="mt-1">$19.00</p>
               </div>
             </div>
+          
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <Link passHref={true} key={8} href={`/templates/${8}`} className="block relative h-70 rounded overflow-hidden">
-                <Image alt='...' src={'/food2.png'} width={600} height={1000} className='object-cover object-center w-full h-full block' />
+              <Link passHref={true} key={10} href={`/templates/${15}`} className="block relative h-70 rounded overflow-hidden">
+                <Image alt='...' src={'/yellow.png'} width={600} height={1000} className='object-cover object-center w-full h-full block' />
               </Link>
               <div className="mt-4">
                 <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Food Lover Website</h2>
+                <h2 className="text-gray-900 title-font text-lg font-medium">Yellow Webpage</h2>
                 <p className="mt-1">$19.00</p>
               </div>
             </div>
@@ -350,7 +351,7 @@ const Template = () => {
               </Link>
               <div className="mt-4">
                 <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Resumer Webpage</h2>
+                <h2 className="text-gray-900 title-font text-lg font-medium">Resume Webpage</h2>
                 <p className="mt-1">$19.00</p>
               </div>
             </div>
@@ -371,6 +372,16 @@ const Template = () => {
               <div className="mt-4">
                 <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">Candle Webpage</h2>
+                <p className="mt-1">$19.00</p>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <Link passHref={true} key={8} href={`/templates/${8}`} className="block relative h-70 rounded overflow-hidden">
+                <Image alt='...' src={'/food2.png'} width={600} height={1000} className='object-cover object-center w-full h-full block' />
+              </Link>
+              <div className="mt-4">
+                <h3 className="text-gray-100 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 className="text-gray-900 title-font text-lg font-medium">Food Lover Website</h2>
                 <p className="mt-1">$19.00</p>
               </div>
             </div>

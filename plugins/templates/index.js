@@ -12,7 +12,7 @@ import resume2 from "./resume2";
 import foodweb2 from "./foodweb2";
 import candlebussiness from "./candlebussiness";
 import teagreen from "./teagreen";
-import skyblue from "./skyblue";
+import yellow from "./yellow";
 
 export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => {
   let options = {
@@ -147,5 +147,5 @@ export default grapesjs.plugins.add("templateComponent", (editor, opts = {}) => 
   foodweb2(editor, options11);
   candlebussiness(editor,options12);
   teagreen(editor,options13);
-  skyblue(editor,options14)
+  yellow(editor,options14)
 });
