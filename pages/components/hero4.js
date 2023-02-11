@@ -8,12 +8,12 @@ const Hero4 = () => {
 
     return (
         <section className=" bg-gray-100">
-            <div className="nav justify-between md:flex-row ">
+            <div className="nav justify-between md:flex-row py-2 px-5  ">
                 <div>
                     <Link href={"/"}>
-                        <h3 className="text-green-500 font-Roboto Mono space-x-5 font-semibold md:text-lg">
+                        <h2 className="text-green-500 font-Roboto Mono space-x-5 font-semibold md:text-xl">
                             Builder.
-                        </h3>
+                        </h2>
                     </Link>
                 </div>
                 <div>
@@ -32,7 +32,7 @@ const Hero4 = () => {
                     </ul>
                 </div>
                 <div>
-                    <Link href={"/"}>
+                    <Link href={"/login"}>
                         <p className=" font-Roboto Mono hover:text-stone-400 space-x-5 font-semibold md:text-lg">
                             start!
                         </p>
@@ -53,8 +53,8 @@ const Hero4 = () => {
                         templates and designs. Crafted to help you tell your story.
                     </p>
                     <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                        <a
-                            href="#_"
+                        <Link
+                            href="/template"
                             className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-green-400 rounded-full sm:w-auto sm:mb-0"
                         >
                             Get Started
@@ -70,9 +70,9 @@ const Hero4 = () => {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                        </a>
-                        <a
-                            href="#_"
+                        </Link>
+                        <Link
+                            href="/login"
                             className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0"
                         >
                             Learn More
@@ -90,20 +90,14 @@ const Hero4 = () => {
                                     d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="w-full mx-auto mt-20 text-center md:w-10/12">
                     <div className="relative z-0 w-full mt-8">
                         <div className="relative overflow-hidden shadow-2xl">
-                            <div className="flex items-center flex-none px-4 bg-green-400 rounded-b-none h-11 rounded-xl">
-                                <div className="flex space-x-1.5">
-                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
-                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
-                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
-                                </div>
-                            </div>
-                            <img src="https://cdn.devdojo.com/images/march2021/green-dashboard.jpg" />
+
+                            <Image height={1200} width={1200} alt={'...'} src={'/header.png'} />
                         </div>
                     </div>
                 </div>

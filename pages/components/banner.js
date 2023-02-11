@@ -6,7 +6,7 @@ import { AiOutlineCloudUpload, AiOutlinePlusCircle } from 'react-icons/ai';
 
 const Banner = () => {
     return (
-        <section className="text-gray-600 body-font mt-28">
+        <section className="text-gray-600 body-font mt-20">
             <div className="container px-4 py-34 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
                     <h1 className="text-5xl font-medium title-font mb-4 text-gray-900 tracking-widest">Create a Website in 3 Steps</h1>
@@ -15,7 +15,6 @@ const Banner = () => {
                 <div className="flex ml-5">
                     <div className="p-1 lg:w-1/2">
                         <div className="h-full flex sm:flex-row flex-col items-start sm:justify-start justify-start text-start sm:text-left">
-                            {/* <img alt="team" className="flex-shrink-0 rounded-lg w-30 h-30 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" /> */}
 
                             <div className='bg-red-100 w-20 h-20 rounded-md justify-center '>
                                 <div className='p-3'>
@@ -33,7 +32,6 @@ const Banner = () => {
 
                     <div className="p-1 lg:w-1/2">
                         <div className="h-full flex sm:flex-row flex-col items-start sm:justify-start justify-start text-start sm:text-left">
-                            {/* <img alt="team" className="flex-shrink-0 rounded-lg w-30 h-30 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" /> */}
 
                             <div className='bg-yellow-100 w-20 h-20 rounded-md justify-center '>
                                 <div className='p-3'>
@@ -51,7 +49,6 @@ const Banner = () => {
 
                     <div className="p-1 lg:w-1/2">
                         <div className="h-full flex sm:flex-row flex-col items-start sm:justify-start justify-start text-start sm:text-left">
-                            {/* <img alt="team" className="flex-shrink-0 rounded-lg w-30 h-30 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" /> */}
 
                             <div className='bg-green-100 w-20 h-20 rounded-md justify-center '>
                                 <div className='p-3'>
