@@ -1,65 +1,115 @@
-import Image from 'next/image';
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
+import "tailwindcss/tailwind.css";
 
 const Hero4 = () => {
-  const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
-  return (
-    <div className="py-6 bg-gray-100 overflow-y-hidden">
-    {/* Code block starts */}
-        {/* <nav className="w-full">
-            <div className="container mx-auto px-6 flex items-center justify-between">
-                <div className="flex items-center" aria-label="Home" role="img">
-                    <img className="cursor-pointer w-8 sm:w-auto" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg1.svg" alt="logo" />
-                    <p className="ml-2 lg:ml-4 text-base lg:text-2xl font-bold text-gray-800">The North</p>
+    return (
+        <section className=" bg-gray-100">
+            <div className="nav justify-between md:flex-row ">
+                <div>
+                    <Link href={"/"}>
+                        <h3 className="text-green-500 font-Roboto Mono space-x-5 font-semibold md:text-lg">
+                            Builder.
+                        </h3>
+                    </Link>
                 </div>
                 <div>
-                    <button onClick={() => setShow(!show)} className="sm:block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">
-                        <img className="h-8 w-8" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg4.svg" alt="show" />
-                    </button>
-                    <div id="menu" className={`md:block lg:block ${show ? '' : 'hidden'}`}>
-                        <button onClick={() => setShow(!show)} className="block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 bg-white md:bg-transparent z-30 top-0 mt-3">
-                            <img className="h-8 w-8" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg5.svg" alt="hide" />
-                        </button>
-                        <ul className="flex text-3xl md:text-base items-center py-8 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent  z-20">
-                            <li className="text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0">
-                                <a href="javascript:void(0)">Company</a>
-                            </li>
-                            <li className="text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0">
-                                <a href="javascript:void(0)">Features</a>
-                            </li>
-                            <li className="text-gray-600 text-lg hover:text-gray-800 cursor-pointer md:ml-10 pt-10 md:pt-0">
-                                <a href="javascript:void(0)">Contact</a>
-                            </li>
-                        </ul>
+                    <ul className="flex items-center space-x-5 font-semibold md:text-lg">
+                        <Link href={"/"}>
+                            <p className=" font-Roboto Mono hover:text-stone-400">About</p>
+                        </Link>
+                        <Link href={"/"}>
+                            <p className=" font-Roboto Mono hover:text-stone-400">
+                                How to use?
+                            </p>
+                        </Link>
+                        <Link href={"/"}>
+                            <p className=" font-Roboto Mono hover:text-stone-400">Team</p>
+                        </Link>
+                    </ul>
+                </div>
+                <div>
+                    <Link href={"/"}>
+                        <p className=" font-Roboto Mono hover:text-stone-400 space-x-5 font-semibold md:text-lg">
+                            start!
+                        </p>
+                    </Link>
+                </div>
+            </div>
+            <div className="px-12 pt-24 mx-auto max-w-7xl font-cursive4">
+                <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
+                    <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+                        <span>Let</span>{" "}
+                        <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                            Us Help You Cross
+                        </span>{" "}<br />
+                        <span>To Success</span>
+                    </h1>
+                    <p className="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
+                        Start gaining the traction you've always wanted with our next-level
+                        templates and designs. Crafted to help you tell your story.
+                    </p>
+                    <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
+                        <a
+                            href="#_"
+                            className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-green-400 rounded-full sm:w-auto sm:mb-0"
+                        >
+                            Get Started
+                            <svg
+                                className="w-4 h-4 ml-1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clipRule="evenodd"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="#_"
+                            className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0"
+                        >
+                            Learn More
+                            <svg
+                                className="w-4 h-4 ml-1"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div className="w-full mx-auto mt-20 text-center md:w-10/12">
+                    <div className="relative z-0 w-full mt-8">
+                        <div className="relative overflow-hidden shadow-2xl">
+                            <div className="flex items-center flex-none px-4 bg-green-400 rounded-b-none h-11 rounded-xl">
+                                <div className="flex space-x-1.5">
+                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
+                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
+                                    <div className="w-3 h-3 border-2 border-white rounded-full" />
+                                </div>
+                            </div>
+                            <img src="https://cdn.devdojo.com/images/march2021/green-dashboard.jpg" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav> */}
-        <div className="w-full px-6">
-            <div className="mt-8 relative rounded-lg bg-indigo-900  container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
-                <Image width={300} height={300} className="mr-1 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg" alt="bg" />
-                <Image width={300} height={300} className="ml-1 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg" />
-                <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">The Freedom to Create the Pages You Want</h1>
-                </div>
-                <div className="flex justify-center items-center mb-10 sm:mb-20">
-                <Link href={'/template'}><button className="hover:text-black hover:bg-transparent lg:text-xl hover:border-white border bg-white transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-bg-indigo-900 	focus:ring-white rounded text-bg-indigo-900  px-4 sm:px-8 py-1 sm:py-3 text-sm">Template</button></Link>
-                    <Link href={'/login'}> <button className="hover:bg-white hover:text-bg-indigo-900  lg:text-xl hover:border-bg-indigo-900  ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-bg-indigo-900  focus:ring-white hover:bg-indigo-900 -800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">Editor</button></Link>
-                </div>
-            </div>
-            <div className="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
-                <div className="relative sm:w-2/3 w-11/12">
-                    <Image width={800} height={800} src={'/editor.png'} alt="Sample Page" role="img" className='rounded-xl rounded-b-xl ' />
-                </div>
-            </div>
-        </div>
-    {/* Code block ends */}
-</div>
+        </section>
+    );
+};
 
-
-  )
-}
-
-export default Hero4
+export default Hero4;
