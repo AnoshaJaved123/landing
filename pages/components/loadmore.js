@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { slice } from 'lodash'
+import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Loadmore = () => {
@@ -98,36 +100,9 @@ const Loadmore = () => {
 
     return (
         <>
-            {/* <div>
-                <h2 className="mb-3">React Js Load More Example</h2>
-                {initialPosts.map((item) => {
-                    return (
-                        <div
-                            className="mb-3 card bg-primary p-2 text-dark bg-opacity-25"
-                            key={item.id}
-                        >
-                            <div className="card-body">{item.id}</div>
-                        </div>
-                    )
-                })}
-                <div className="d-grid mt-3 mb-5">
-                    {isCompleted ? (
-                        <button
-                            onClick={loadMore}
-                            type="button"
-                            className="btn btn-danger disabled"
-                        >
-                            That's It
-                        </button>
-                    ) : (
-                        <button onClick={loadMore} type="button" className="btn btn-danger">
-                            Load More +
-                        </button>
-                    )}
-                </div>
-            </div> */}
+
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-16 mx-auto">
+                <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="text-5xl font-medium title-font mb-4 text-gray-900 tracking-widest">Select The Template</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
@@ -135,17 +110,16 @@ const Loadmore = () => {
                     <div className="flex flex-wrap -m-4">
 
                         {initialPosts.map((item) => {
-                            return (
-                                <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                    <a className="block relative h-48 rounded overflow-hidden">
-                                        <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={item.location} />
-                                    </a>
-                                    <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-                                        <p className="mt-1">$16.00</p>
-                                    </div>
+                            return (<div key={item.id} className="lg:w-1/3 md:w-1/2 p-4 w-full">
+                                <Link href={'#'} className="block relative h-48 rounded overflow-hidden">
+                                    <Image height={400} width={400} alt={'...'} className="object-cover object-center w-full h-full block" src={item.location} />
+                                </Link>
+                                <div className="mt-4">
+                                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                                    <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                                    <p className="mt-1">$16.00</p>
                                 </div>
+                            </div>
                             )
                         })}
 
@@ -155,12 +129,12 @@ const Loadmore = () => {
                             <button
                                 onClick={loadMore}
                                 type="button"
-                                className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
+                                className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full text-lg"
                             >
                                 That's It
                             </button>
                         ) : (
-                            <button onClick={loadMore} type="button" className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
+                            <button onClick={loadMore} type="button" className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full text-lg">
                                 Load More +
                             </button>
                         )}

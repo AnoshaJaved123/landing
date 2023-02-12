@@ -4,7 +4,7 @@ import React from 'react'
 
 const Leftsection = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-100 mt-28">
+    <section className="text-gray-600 body-font bg-gray-100 mt-20">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <h1 className='text-5xl font-semibold text-green-500'> 100+ <br /> Templates <br className='text-gray-800' /> to Customize</h1>

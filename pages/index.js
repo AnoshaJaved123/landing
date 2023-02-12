@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import Ctaform from './components/ctaform'
 import Banner from './components/banner'
 import Loadmore from './components/loadmore'
+import Trusted from './components/trusted'
+
 export default function Home() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function Home() {
       <Leftsection />
       <Loadmore />
       <Rightsection />
+      <Trusted />
       <Ctaform />
 
 
