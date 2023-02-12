@@ -100,34 +100,7 @@ const Loadmore = () => {
 
     return (
         <>
-            {/* <div>
-                <h2 className="mb-3">React Js Load More Example</h2>
-                {initialPosts.map((item) => {
-                    return (
-                        <div
-                            className="mb-3 card bg-primary p-2 text-dark bg-opacity-25"
-                            key={item.id}
-                        >
-                            <div className="card-body">{item.id}</div>
-                        </div>
-                    )
-                })}
-                <div className="d-grid mt-3 mb-5">
-                    {isCompleted ? (
-                        <button
-                            onClick={loadMore}
-                            type="button"
-                            className="btn btn-danger disabled"
-                        >
-                            That's It
-                        </button>
-                    ) : (
-                        <button onClick={loadMore} type="button" className="btn btn-danger">
-                            Load More +
-                        </button>
-                    )}
-                </div>
-            </div> */}
+
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
