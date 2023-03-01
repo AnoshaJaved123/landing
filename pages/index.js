@@ -18,17 +18,17 @@ export default function Home() {
     <>
       <section className=" bg-gray-100 mx-12 my-10 rounded-t-3xl">
         <header className="text-gray-600 text-lg font-semibold">
-          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <div className="container mx-auto flex flex-wrap py-2 px-5 flex-col md:flex-row items-center">
             <Link href={"/"}>
               <h2 className="text-emerald-500 font-Roboto Mono space-x-5 font-semibold md:text-xl">
                 Builder.
               </h2>
             </Link>
-            <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
               <Link href={'/about'} className="mr-5 hover:text-gray-900">About</Link>
               <Link href={'/'} className="mr-5 hover:text-gray-900">How to use?</Link>
               <Link href={'/team'} className="mr-5 hover:text-gray-900">Team</Link>
-            </nav>
+            </div>
             <Link href={"/template"}>
               <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Start
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-1" viewBox="0 0 24 24">

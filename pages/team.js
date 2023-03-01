@@ -9,7 +9,7 @@ const Team = () => {
         <>
             <section className=" bg-gray-100 mx-12 my-10 rounded-t-3xl ">
                 <header className="text-gray-600 text-lg font-semibold">
-                    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                    <div className="container mx-auto flex flex-wrap py-2 px-5 flex-col md:flex-row items-center">
                         <Link href={"/"}>
                             <h2 className="text-emerald-500 font-Roboto Mono space-x-5 font-semibold md:text-xl">
                                 Builder.
