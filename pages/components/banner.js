@@ -50,9 +50,9 @@ const Banner = () => {
                     <div className="p-1 lg:w-1/2">
                         <div className="h-full flex sm:flex-row flex-col items-start sm:justify-start justify-start text-start sm:text-left">
 
-                            <div className='bg-green-100 w-20 h-20 rounded-md justify-center '>
+                            <div className='bg-emerald-100 w-20 h-20 rounded-md justify-center '>
                                 <div className='p-3'>
-                                    <AiOutlineCloudUpload size={45} color={'green'} />
+                                    <AiOutlineCloudUpload size={45} color={'emerald'} />
 
                                 </div>
                             </div>

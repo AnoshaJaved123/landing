@@ -3,15 +3,17 @@ import React from "react";
 import Image from "next/image";
 
 const Header = () => {
-    return (
-      <div>
+  return (
+    <div>
       <nav className="relative px-4 py-4 flex justify-between items-center bg-gray-800">
         <a className="text-3xl font-bold leading-none" href="#">
-          <Image alt='...' src={'/layers.png'} width={50} height={50} />
+          {/* <Image alt='...' src={'/layers.png'} width={50} height={50} /> */}
         </a>
-        <h2 className="text-xl font-semibold font-cursive2 text-white ml-5">Layers Web Builder</h2>
+        <h1 className="text-emerald-500 font-Roboto Mono space-x-5 font-semibold md:text-4xl">
+          Builder.
+        </h1>
         <div className="lg:hidden">
-          <button className="navbar-burger flex items-center text-blue-600 p-3">
+          <button className="navbar-burger flex items-center text-emerald-600 p-3">
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -45,7 +47,7 @@ const Header = () => {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-blue-600 font-bold" href="#">
+            <a className="text-sm text-emerald-600 font-bold" href="#">
               About Us
             </a>
           </li>
@@ -120,7 +122,7 @@ const Header = () => {
           Sign In
         </a>
         <a
-          className="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          className="hidden lg:inline-block py-2 px-6 bg-emerald-500 hover:bg-emerald-600 text-sm text-white font-bold rounded-xl transition duration-200"
           href="#"
         >
           Sign up
@@ -155,7 +157,7 @@ const Header = () => {
             <ul>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                   href="#"
                 >
                   Home
@@ -163,7 +165,7 @@ const Header = () => {
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                   href="#"
                 >
                   About Us
@@ -171,7 +173,7 @@ const Header = () => {
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                   href="#"
                 >
                   Services
@@ -179,7 +181,7 @@ const Header = () => {
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                   href="#"
                 >
                   Pricing
@@ -187,7 +189,7 @@ const Header = () => {
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                   href="#"
                 >
                   Contact
@@ -204,7 +206,7 @@ const Header = () => {
                 Sign in
               </a>
               <a
-                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
+                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-emerald-600 hover:bg-emerald-700  rounded-xl"
                 href="#"
               >
                 Sign Up
@@ -218,8 +220,8 @@ const Header = () => {
         </nav>
       </div>
     </div>
-        
-    )
+
+  )
 }
 
 export default Header

@@ -95,8 +95,10 @@ const Login = () => {
             <div className="xl:ml-20 xl:w-3/12 lg:w-3/12 md:w-6/12 mb-12 md:mb-0 border border-neutral-600 p-10">
               <div className='text-center'>
                 {/* <Link href={'/'}><a><Image src='/logo33.png' alt='img' width={100} height={100}></Image></a></Link> */}
-                <Image width={80} height={80} alt="logo" className="ml-20 mb-3" src={'/layers.png'} />
-                <h2 className='text-3xl font-semibold font-cursive2 text-black'>Layers Web Builder</h2>
+                {/* <Image width={80} height={80} alt="logo" className="ml-20 mb-3" src={'/layers.png'} /> */}
+                <h1 className="text-emerald-500 font-Roboto Mono space-x-5 font-semibold md:text-4xl">
+                  Builder.
+                </h1>
               </div>
               <form>
                 <h1 className="text-center text-xl font-semibold mb-9 mt-2 font-serif">LOG IN</h1>
@@ -116,7 +118,7 @@ const Login = () => {
                 </div>
                 <div className="text-center lg:text-center">
 
-                  <button onClick={handleSubmit} type="button" className="loginbutton font-serif inline-block bg-transparent text-md my-2 hover:bg-black text-black font-semibold hover:text-white py-1 px-4 border border-black hover:border-transparent">
+                  <button onClick={handleSubmit} type="button" className="loginbutton font-serif inline-block bg-transparent text-md my-2 hover:bg-emerald-500 text-emerald-600 font-semibold hover:text-white py-1 px-4 border border-emerald-600 hover:border-transparent">
                     LOGIN
                   </button>
 

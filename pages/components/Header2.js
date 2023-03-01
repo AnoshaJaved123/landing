@@ -92,7 +92,7 @@ const Header = () => {
 
 
         <BsCart4 onClick={togglecart} className='text-xl md:text-2xl mr-5 hover:text-stone-600' />
-        <div className="top-0 right-0 absolute text-xs w-5 h-5 bg-green-200 border-2 border-white dark:border-gray-800 rounded-full"><p className='text-center'></p></div>
+        <div className="top-0 right-0 absolute text-xs w-5 h-5 bg-emerald-200 border-2 border-white dark:border-gray-800 rounded-full"><p className='text-center'></p></div>
 
       </div>
 

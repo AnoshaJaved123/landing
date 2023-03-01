@@ -129,12 +129,12 @@ const Loadmore = () => {
                             <button
                                 onClick={loadMore}
                                 type="button"
-                                className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full text-lg"
+                                className="flex mx-auto mt-20 text-white bg-emerald-500 border-0 py-2 px-8 focus:outline-none hover:bg-emerald-600 rounded-full text-lg"
                             >
                                 That's It
                             </button>
                         ) : (
-                            <button onClick={loadMore} type="button" className="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full text-lg">
+                            <button onClick={loadMore} type="button" className="flex mx-auto mt-20 text-white bg-emerald-500 border-0 py-2 px-8 focus:outline-none hover:bg-emerald-600 rounded-full text-lg">
                                 Load More +
                             </button>
                         )}

@@ -7,11 +7,11 @@ const Hero4 = () => {
     const [show, setShow] = useState(false);
 
     return (
-        <section className=" bg-gray-100">
-            <div className="nav justify-between md:flex-row py-2 px-5  ">
+        <section className=" bg-gray-100 mx-12 my-10 rounded-t-3xl">
+            <div className="nav justify-between md:flex-row mt-3 pt-3 px-5">
                 <div>
                     <Link href={"/"}>
-                        <h2 className="text-green-500 font-Roboto Mono space-x-5 font-semibold md:text-xl">
+                        <h2 className="text-emerald-500 font-Roboto Mono space-x-5 font-semibold md:text-xl">
                             Builder.
                         </h2>
                     </Link>
@@ -43,7 +43,7 @@ const Hero4 = () => {
                 <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
                     <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
                         <span>Let</span>{" "}
-                        <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                        <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-emerald-500 to-purple-500 lg:inline">
                             Us Help You Cross
                         </span>{" "}<br />
                         <span>To Success</span>
@@ -55,7 +55,7 @@ const Hero4 = () => {
                     <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                         <Link
                             href="/template"
-                            className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-green-400 rounded-full sm:w-auto sm:mb-0"
+                            className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-emerald-500 rounded-full sm:w-auto sm:mb-0"
                         >
                             Get Started
                             <svg
@@ -95,7 +95,7 @@ const Hero4 = () => {
                 </div>
                 <div className="w-full mx-auto mt-20 text-center md:w-10/12">
                     <div className="relative z-0 w-full mt-8">
-                        <div className="relative overflow-hidden shadow-2xl">
+                        <div className="relative overflow-hidden shadow-2xl rounded-t-3xl">
 
                             <Image height={1200} width={1200} alt={'...'} src={'/header.png'} />
                         </div>
