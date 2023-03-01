@@ -45,9 +45,9 @@ const Template = () => {
     <>
       <div>
         <nav className="relative px-4 py-4 flex justify-between items-center bg-gray-800">
-          <a className="text-3xl font-bold leading-none" href="#">
+          <Link className="text-3xl font-bold leading-none" href="#">
             {/* <Image alt='...' src={'/layers.png'} width={50} height={50} /> */}
-          </a>
+          </Link>
           <h2 className="text-xl font-semibold text-white ml-5">Buildr.</h2>
           <div className="lg:hidden">
             <button className="navbar-burger flex items-center text-emerald-600 p-3">
@@ -63,9 +63,9 @@ const Template = () => {
           </div>
           <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
             <li>
-              <a className="text-sm text-gray-200 hover:text-gray-100" href="/">
+              <Link className="text-sm text-gray-200 hover:text-gray-100" href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="text-gray-300">
               <svg
@@ -84,9 +84,9 @@ const Template = () => {
               </svg>
             </li>
             <li>
-              <a className="text-sm text-emerald-600 font-bold" href="/about">
+              <Link className="text-sm text-emerald-600 font-bold" href="/about">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="text-gray-300">
               <svg
@@ -105,9 +105,9 @@ const Template = () => {
               </svg>
             </li>
             <li>
-              <a className="text-sm text-gray-200 hover:text-gray-100" href="/template">
+              <Link className="text-sm text-gray-200 hover:text-gray-100" href="/template">
                 Services
-              </a>
+              </Link>
             </li>
             <li className="text-gray-300">
               <svg
@@ -126,9 +126,9 @@ const Template = () => {
               </svg>
             </li>
             <li>
-              <a className="text-sm text-gray-200 hover:text-gray-100" href="#">
+              <Link className="text-sm text-gray-200 hover:text-gray-100" href="#">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li className="text-gray-300">
               <svg
@@ -147,32 +147,32 @@ const Template = () => {
               </svg>
             </li>
             <li>
-              <a className="text-sm text-gray-200 hover:text-gray-100" href="#">
+              <Link className="text-sm text-gray-200 hover:text-gray-100" href="#">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
-          <a
+          <Link
             className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
             href="/login"
           >
             Sign In
-          </a>
-          <a
+          </Link>
+          <Link
             className="hidden lg:inline-block py-2 px-6 bg-emerald-500 hover:bg-emerald-600 text-sm text-white font-bold rounded-xl transition duration-200"
             href="/signup"
           >
             Sign up
-          </a>
+          </Link>
         </nav>
         <div className="navbar-menu relative z-50 hidden">
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div className="flex items-center mb-8">
-              <a className="mr-auto text-3xl font-bold leading-none" href="#">
+              <Link className="mr-auto text-3xl font-bold leading-none" href="#">
                 <Image alt='...' src={'/layers.png'} width={50} height={50} />
 
-              </a>
+              </Link>
               <button className="navbar-close">
                 <svg
                   className="h-6 w-6 text-gray-200 cursor-pointer hover:text-gray-100"
@@ -193,61 +193,61 @@ const Template = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                     href="#"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                     href="#"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                     href="#"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                     href="#"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-200 hover:bg-emerald-50 hover:text-emerald-600 rounded"
                     href="#"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="mt-auto">
               <div className="pt-6">
-                <a
-                  className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+                <Link
+                  className="block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
                   href="/login"
                 >
                   Sign in
-                </a>
-                <a
+                </Link>
+                <Link
                   className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-emerald-600 hover:bg-emerald-700  rounded-xl"
                   href="/signup"
                 >
                   Sign Up
-                </a>
+                </Link>
               </div>
 
               <p className="my-4 text-xs text-center text-gray-200">

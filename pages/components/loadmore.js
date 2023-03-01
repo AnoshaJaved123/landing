@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { slice } from 'lodash'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -63,10 +63,6 @@ const Loadmore = () => {
             setIsCompleted(false)
         }
     }
-    useEffect(() => {
-        // getData()
-        console.log(post)
-    }, [])
 
 
     return (
