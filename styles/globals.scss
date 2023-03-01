@@ -6,17 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
-// @import "../node_modules/bootstrap/scss/bootstrap";
-// @import "../node_modules/bootstrap";
-// @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
 
-// @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables";
 
 
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   margin: 0;

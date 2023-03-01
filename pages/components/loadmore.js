@@ -8,70 +8,41 @@ const Loadmore = () => {
 
     const img = [
         {
-            'id': 1,
-            'location': '/img/green.PNG'
-        },
-        {
-            'id': 2,
-            'location': '/img/candles.PNG'
-        },
-        {
-            'id': 3,
-            'location': '/img/food2front-min.png'
-        },
-        {
-            'id': 4,
-            'location': '/img/foodwebfront-min.png'
-        },
-        {
-            'id': 5,
-            'location': '/img/gymwebfront-min.png'
-        },
-        {
-            'id': 6,
-            'location': '/img/landingfront-min.png'
-        },
-        {
-            'id': 7,
-            'location': '/img/portfoliofront-min.png'
-        },
-        {
-            'id': 8,
-            'location': '/img/purplewebfront-min.PNG'
-        },
-        {
-            'id': 9,
-            'location': '/img/yellow.PNG'
-        },
-        {
-            'id': 10,
-            'location': '/img/green.PNG'
-        },
-        {
-            'id': 11,
-            'location': '/img/green.PNG'
-        },
-        {
-            'id': 12,
-            'location': '/img/green.PNG'
-        },
-        {
             'id': 13,
             'location': '/img/green.PNG'
         },
         {
             'id': 14,
-            'location': '/img/green.PNG'
+            'location': '/img/candles.PNG'
+        },
+        {
+            'id': 8,
+            'location': '/img/food2front-min.png'
+        },
+        {
+            'id': 2,
+            'location': '/img/foodwebfront-min.png'
+        },
+        {
+            'id': 3,
+            'location': '/img/gymwebfront-min.png'
+        },
+        {
+            'id': 5,
+            'location': '/img/landingfront-min.png'
+        },
+        {
+            'id': 10,
+            'location': '/img/portfoliofront-min.png'
+        },
+        {
+            'id': 4,
+            'location': '/img/purplewebfront-min.PNG'
         },
         {
             'id': 15,
-            'location': '/img/green.PNG'
+            'location': '/img/yellow.PNG'
         },
-        {
-            'id': 16,
-            'location': '/img/green.PNG'
-        }
-
     ]
     const [post, setPost] = useState(img)
     const [isCompleted, setIsCompleted] = useState(false)
@@ -111,7 +82,8 @@ const Loadmore = () => {
 
                         {initialPosts.map((item) => {
                             return (<div key={item.id} className="lg:w-1/3 md:w-1/2 p-4 w-full">
-                                <Link href={'#'} className="block relative h-48 rounded overflow-hidden">
+
+                                <Link passHref={true} key={item.id} href={`/templates/${item.id}`} className="block relative h-48 rounded overflow-hidden">
                                     <Image height={400} width={400} alt={'...'} className="object-cover object-center w-full h-full block" src={item.location} />
                                 </Link>
                                 <div className="mt-4">
